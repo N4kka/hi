@@ -1,7 +1,7 @@
 <header>
     <ul>
         <li>
-            <a href="/chi-siamo">About</a>
+            <a href="/about">About</a>
         </li>
     </ul>
 </header>

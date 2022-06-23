@@ -37,6 +37,6 @@ Route::get('/', function () {
     return view('home', $data);
 });
 
-Route::get('/chi-siamo', function () {
+Route::get('/about', function () {
     return view('about');
 });
