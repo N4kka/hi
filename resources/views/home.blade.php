@@ -1,3 +1,11 @@
+<header>
+    <ul>
+        <li>
+            <a href="/chi-siamo">About</a>
+        </li>
+    </ul>
+</header>
+
 <h1>Ciao {{ $name }} {{ $lastname }}, sono una pagina home</h1>
 
 {{-- Se l'utente é loggato, scrivo "sei loggato"
@@ -13,7 +21,7 @@ altrimenti scrivo "effettuare login" --}}
 
 @foreach ($students as $item)
     {{-- aggiungo la frase solo se é il primo elemento --}}
-    <li>{{ $item['name'] }} {{ $item['lastname'] }}
+    <li style="list-style: none">{{ $item['name'] }} {{ $item['lastname'] }}
         @if ($loop->first)
             -> first element
         @endif
@@ -21,13 +29,13 @@ altrimenti scrivo "effettuare login" --}}
 @endforeach
 
 @for ($i = 0; $i < 10; $i++)
-    <li> {{ $i }}</li>
+    <li style="list-style:circle"> {{ $i }}</li>
 @endfor
 
 {{-- stampare lista studenti se sono presenti studenti, altrimenti scrivo che la lista é vuota --}}
 
 @forelse ($students as $item)
-    <li> {{ $item['name'] }} {{ $item['lastname'] }} </li>
+    <li style="list-style: none"> {{ $item['name'] }} {{ $item['lastname'] }} </li>
 @empty
     <p>Non sono presenti studenti</p>
 @endforelse
