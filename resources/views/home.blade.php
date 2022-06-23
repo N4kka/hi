@@ -1,1 +1,1 @@
-<h1>Ciao sono una pagina home</h1>
+<h1>Ciao {{ $name }} {{ $lastname }}, sono una pagina home</h1>
