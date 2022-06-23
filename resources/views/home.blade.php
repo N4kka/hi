@@ -8,3 +8,13 @@ altrimenti scrivo "effettuare login" --}}
 @else
     <p>Effettuare login</p>
 @endif
+
+{{-- stampare lista studenti --}}
+
+@foreach ($students as $item)
+    <li>{{ $item['name'] }} {{ $item['lastname'] }} ->first element</li>
+@endforeach
+
+@for ($i = 0; $i < 10; $i++)
+    <li> {{ $i }}</li>
+@endfor

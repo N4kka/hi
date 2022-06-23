@@ -17,7 +17,21 @@ Route::get('/', function () {
     $data = [
         'name' => 'Nicola',
         'lastname' => 'Sarli',
-        'isLoggedIn' => false
+        'isLoggedIn' => false,
+        'students' => [
+            [
+                'name' => 'Vitantonio',
+                'lastname' => 'Paparella',
+            ],
+            [
+                'name' => 'Carlo',
+                'lastname' => 'Lollobrigida'
+            ],
+            [
+                'name' => 'Sara',
+                'lastname' => 'Genuardi'
+            ]
+        ]
     ];
 
     return view('home', $data);
