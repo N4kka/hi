@@ -19,18 +19,18 @@ Route::get('/', function () {
         'lastname' => 'Sarli',
         'isLoggedIn' => false,
         'students' => [
-            [
-                'name' => 'Vitantonio',
-                'lastname' => 'Paparella',
-            ],
-            [
-                'name' => 'Carlo',
-                'lastname' => 'Lollobrigida'
-            ],
-            [
-                'name' => 'Sara',
-                'lastname' => 'Genuardi'
-            ]
+            // [
+            //     'name' => 'Vitantonio',
+            //     'lastname' => 'Paparella',
+            // ],
+            // [
+            //     'name' => 'Carlo',
+            //     'lastname' => 'Lollobrigida'
+            // ],
+            // [
+            //     'name' => 'Sara',
+            //     'lastname' => 'Genuardi'
+            // ]
         ]
     ];
 

@@ -12,9 +12,22 @@ altrimenti scrivo "effettuare login" --}}
 {{-- stampare lista studenti --}}
 
 @foreach ($students as $item)
-    <li>{{ $item['name'] }} {{ $item['lastname'] }} ->first element</li>
+    {{-- aggiungo la frase solo se é il primo elemento --}}
+    <li>{{ $item['name'] }} {{ $item['lastname'] }}
+        @if ($loop->first)
+            -> first element
+        @endif
+    </li>
 @endforeach
 
 @for ($i = 0; $i < 10; $i++)
     <li> {{ $i }}</li>
 @endfor
+
+{{-- stampare lista studenti se sono presenti studenti, altrimenti scrivo che la lista é vuota --}}
+
+@forelse ($students as $item)
+    <li> {{ $item['name'] }} {{ $item['lastname'] }} </li>
+@empty
+    <p>Non sono presenti studenti</p>
+@endforelse
