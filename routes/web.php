@@ -35,8 +35,8 @@ Route::get('/', function () {
     ];
 
     return view('home', $data);
-});
+})->name('home');
 
-Route::get('/about', function () {
+Route::get('/about-us', function () {
     return view('about');
-});
+})->name('about');

@@ -1,7 +1,7 @@
 <header>
     <ul>
         <li>
-            <a href="/about">About</a>
+            <a href=" {{route('about')}} ">About</a>
         </li>
     </ul>
 </header>
