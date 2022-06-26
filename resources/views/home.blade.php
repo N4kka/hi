@@ -23,6 +23,7 @@
 
 
 <h1>Ciao {{ $name }} {{ $lastname }}, sono una pagina home</h1>
+<img src="https://i.pinimg.com/736x/08/4c/95/084c951c772a87eb599724411b34f2a5.jpg" alt="">
 
 {{-- Se l'utente é loggato, scrivo "sei loggato"
 altrimenti scrivo "effettuare login" --}}
